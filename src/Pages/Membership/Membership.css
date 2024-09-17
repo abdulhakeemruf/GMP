@@ -1,0 +1,48 @@
+/* Form.css */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+  padding: 1em;
+  background: #f9f9f9;
+  border-radius: 10px;
+  margin-top: 60px;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.dob-dropdowns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dob-dropdowns select {
+  width: 30%;
+}
+
+button {
+  padding: 10px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4cae4c;
+}

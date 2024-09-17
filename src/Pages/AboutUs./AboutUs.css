@@ -1,0 +1,134 @@
+.about-us-container {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: Arial, sans-serif;
+  margin-top: 70px;
+}
+
+.header-image {
+  /*background-image: url('path_to_your_header_image');
+  background-size: cover;
+  height: 200px;
+  display: flex;*/
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.header-image h1 {
+  font-size: 48px;
+}
+
+.intro-section {
+  display: flex;
+  margin-top: 40px;
+}
+
+.intro-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-text{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 50%;
+}
+.intro-text h2 {
+  font-size: 36px;
+}
+
+.vision-mission-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vision-mission-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  width: 60%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.vision, .mission {
+  width: 45%;
+}
+
+.vision h3, .mission h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.goals-values-section {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  width: 60%;
+  text-align: center;
+}
+
+.goals, .core-values, .objectives {
+  width: 30%;
+}
+
+.goals-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+.goals ul, .core-values ul, .objectives ul {
+  list-style: none;
+  padding: 0;
+}
+
+.goals li, .core-values li, .objectives li {
+  margin-bottom: 10px;
+}
+
+.goals h3, .core-values h3, .objectives h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+@media(max-width: 764px){
+  .vision-mission-section{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .vision-mission-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .goals-values-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .goals-values-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    width: 80%;
+    text-align: center;
+  }
+  
+  .goals, .core-values, .objectives {
+    width: 80%;
+    margin: 20px;
+  }
+}

@@ -1,0 +1,86 @@
+/* Container for the entire board section */
+.board-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-top: 100px;
+}
+
+/* Main content area */
+.main-content {
+  width: 100%;
+}
+
+/* Heading styles */
+h1 {
+  font-size: 5em;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+/* Specific styles for certain board members */
+.board-member2,
+.board-member4,
+.board-member6 {
+  margin-left: 400px; /* Maintain the margins on larger screens */
+}
+
+/* Media queries for small screens */
+@media screen and (max-width: 768px) {
+  .board-container {
+    padding: 10px;
+    margin-top: 50px;
+  }
+
+  h1 {
+    font-size: 3em;
+    margin-bottom: 40px;
+  }
+
+  .board-member2,
+  .board-member4,
+  .board-member6 {
+    margin-left: 0; /* Remove the margin for smaller screens */
+    text-align: center; /* Center-align text for better readability */
+  }
+
+  .board-image {
+    margin: 0 auto; /* Center the image */
+  }
+}
+
+/* Media queries for medium screens */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .board-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  h1 {
+    font-size: 4em;
+    margin-bottom: 50px;
+  }
+
+  .board-member2,
+  .board-member4,
+  .board-member6 {
+    margin-left: 200px; /* Reduce the margin for medium screens */
+    width: 100%; /* Make sure elements are full width */
+  }
+}
+
+/* Media queries for larger screens */
+@media screen and (min-width: 1025px) {
+  .board-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .board-member2,
+  .board-member4,
+  .board-member6 {
+    margin-left: 400px; /* Maintain large margins for desktop screens */
+  }
+}

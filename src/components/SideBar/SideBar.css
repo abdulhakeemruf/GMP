@@ -1,0 +1,40 @@
+.sidebar {
+    width: 25%;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .search-box input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .recent-posts {
+    margin-top: 20px;
+  }
+  
+  .recent-posts h3 {
+    margin-bottom: 10px;
+  }
+  
+  .recent-posts ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .recent-posts li {
+    margin-bottom: 10px;
+  }
+  
+  .recent-posts a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .recent-posts a:hover {
+    text-decoration: underline;
+  }
+  

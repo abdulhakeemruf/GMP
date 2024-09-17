@@ -1,0 +1,73 @@
+/* Global Styles for All Screens */
+.board-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 0 15px; /* Add some padding for mobile */
+  }
+  
+  .board-image {
+    width: 100%;
+    max-width: 200px; /* Limit the max size for larger screens */
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .text-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h2, h3 {
+    margin: 5px 0;
+  }
+  
+  .description {
+    text-align: justify;
+    line-height: 1.6;
+    margin-top: 20px;
+    max-width: 100%; /* Make sure description is responsive */
+  }
+  
+  @media screen and (min-width: 768px) {
+    .board-member {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  
+    .board-image {
+      margin-bottom: 0;
+      margin-right: 20px; /* Space between image and text */
+    }
+  
+    .info-container {
+      align-items: flex-start;
+      margin-left: 20px;
+    }
+  
+    .text-container {
+      text-align: left;
+    }
+  
+    .description {
+      text-align: justify;
+      max-width: 600px; /* Control the width of the description on larger screens */
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .description {
+      max-width: 800px; /* Increase description width on large screens */
+    }
+  }
+  

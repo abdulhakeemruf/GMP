@@ -1,0 +1,101 @@
+/* Slider container for the whole slider */
+.slider-container {
+  width: 100%;           /* Full width */
+  height: 100vh;         /* Full-screen height */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Each individual slider item */
+.slider-item {
+  position: relative;
+  width: 100%;
+  height: 100vh;         /* Full height of the viewport */
+}
+
+/* Background image for each slide */
+.slider-bg {
+  background-size: cover;            /* Ensures the image covers the entire div */
+  background-position: center;       /* Centers the background image */
+  background-repeat: no-repeat;      /* Prevents image repetition */
+  height: 100%;                      /* Full height */
+  display: flex;                     /* Centers the content inside */
+  justify-content: center;           /* Centers horizontally */
+  align-items: center;               /* Centers vertically */
+}
+
+/* Text overlay content */
+.slider-content {
+  position: absolute;
+  z-index: 1;                        /* Ensures text appears above the image */
+  color: white;                      /* Text color */
+  font-size: 2.5rem;                 /* Adjust size as needed */
+  font-weight: bold;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Shadow for better readability */
+  text-align: center;                /* Center text */
+  padding: 20px;                     /* Optional padding */
+  max-width: 90%;                    /* Responsive padding */
+  box-sizing: border-box;            /* Includes padding in the width */
+}
+
+/* Custom styling for slick dots */
+.slick-dots {
+  bottom: 20px;                      /* Adjust position as needed */
+}
+
+.slick-dots li button:before {
+  font-size: 12px;                   /* Dot size */
+  color: white;                      /* Dot color */
+  opacity: 0.75;                     /* Slight transparency */
+}
+
+.slick-dots li.slick-active button:before {
+  color: white;                      /* Active dot color */
+  opacity: 1;                        /* Fully visible */
+}
+
+/* Custom styling for slick arrows */
+.slick-prev, .slick-next {
+  z-index: 2;                        /* Ensure arrows are above the background image */
+  color: white;
+  font-size: 24px;                   /* Size of arrows */
+}
+
+.slick-prev:before, .slick-next:before {
+  color: white;                      /* Arrow color */
+  font-size: 40px;                   /* Adjust size */
+}
+
+/* Responsive Styles */
+
+/* Tablets and smaller devices (portrait) */
+@media (max-width: 768px) {
+  .slider-content {
+      font-size: 1.8rem;             /* Adjust font size */
+      padding: 10px;                /* Adjust padding */
+  }
+  
+  .slick-dots {
+      bottom: 15px;                 /* Adjust position */
+  }
+
+  .slick-prev:before, .slick-next:before {
+      font-size: 30px;              /* Adjust size of arrows */
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+  .slider-content {
+      font-size: 1.5rem;             /* Adjust font size */
+      padding: 5px;                 /* Adjust padding */
+  }
+  
+  .slick-dots {
+      bottom: 10px;                 /* Adjust position */
+  }
+
+  .slick-prev:before, .slick-next:before {
+      font-size: 24px;              /* Adjust size of arrows */
+  }
+}
